@@ -1,0 +1,8 @@
+@import "open-props/postcss/style";
+
+:root {
+
+  --primary : var(--gray-9);
+  --on-primary: var(--gray-0);
+  
+}
