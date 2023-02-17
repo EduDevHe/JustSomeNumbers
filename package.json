@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "clsx": "^1.2.1",
     "open-props": "^1.5.5",
     "postcss": "^8.4.21",
     "postcss-flexbugs-fixes": "^5.0.2",

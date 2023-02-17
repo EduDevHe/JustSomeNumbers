@@ -1,0 +1,8 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary);
+}
+.light {
+  background-color: var(--on-primary);
+}
