@@ -6,3 +6,12 @@
 .light {
   background-color: var(--on-primary);
 }
+
+.lightModeButton {
+  fill: wheat;
+  font-size: 0.5rem;
+}
+.darkModeButton {
+  font-size: 0.5rem;
+  fill: var(--on-primary);
+}
