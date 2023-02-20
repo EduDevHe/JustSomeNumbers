@@ -1,0 +1,38 @@
+.toggleContainer {
+  /* width: 100%; */
+  /* height: 100%; */
+}
+.toggle {
+  width: 5rem;
+  height: 2.5rem;
+  appearance: none;
+  border-radius: 50px;
+  box-shadow: inset 0px 0px 16px 1px regba(0, 0, 0, 0, 24);
+  background-color: #c0bcbb;
+  position: relative;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.toggle:checked {
+  background-color: var(-on-primary);
+}
+
+.toggle:before {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50px;
+  position: absolute;
+  background-color: var(--primary);
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
+  transform: scale(1.1);
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+}
+
+.toggle:checked:before {
+  left: 2.5rem;
+  background-color: white;
+}
