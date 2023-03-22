@@ -7,9 +7,7 @@ export function Header() {
   return (
     <>
       <div className={css.themeContainer}>
-        <MdOutlineLightMode className={css.lightModeButton} />
         <Toggle />
-        <MdOutlineNightlight className={css.darkModeButton} />
       </div>
     </>
   );
