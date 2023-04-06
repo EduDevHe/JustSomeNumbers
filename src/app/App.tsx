@@ -2,8 +2,12 @@ import css from "./style.module.css";
 import { Header } from "../components/Header";
 import { useState } from "react";
 import { clsx } from "clsx";
+import { useAtom, useAtomValue } from "jotai";
+import { themeAtom } from "../atoms /theme";
 export function App() {
-  const [light, setLight] = useState(false);
+  const light = useAtomValue(themeAtom);
+
+  console.log("tema", light);
 
   const classList = clsx({
     [css.App]: true,
@@ -13,7 +17,6 @@ export function App() {
   return (
     <div className={classList}>
       <Header />
-      <button onClick={() => setLight(!light)}>theme</button>
     </div>
   );
 }

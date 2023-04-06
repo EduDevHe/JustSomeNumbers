@@ -16,7 +16,7 @@
 }
 
 .toggle:before {
-  content: "🌕";
+  content: "🌙";
   overflow: hidden;
   width: 2.5rem;
   height: 2.5rem;
@@ -26,56 +26,19 @@
   border-radius: 50px;
   text-align: center;
   position: absolute;
-  /* background-color: white; */
-  /* box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25); */
+  background-color: var(--primary);
+  box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.25);
   transform: scale(1.1);
-  /* top: 0; */
-  /* left: 0; */
-  /* transition: 0.4s; */
+  top: 0;
+  left: 0;
+  transition: 0.4s;
 }
 
 .toggle:checked:before {
+  content: "☀️";
+  background-color: white;
   animation: top 2s;
   animation: topDown 2s;
   left: 2.5rem;
-
-  content: "🌑";
-  /* background-color: var(--primary); */
   border: none;
-}
-
-.toggle:not(:checked):before {
-  animation: down 2s;
-  animation: top 2s;
-}
-
-@keyframes down {
-  0% {
-    top: 0px;
-  }
-
-  100% {
-    top: -50px;
-  }
-}
-
-@keyframes topDown {
-  0% {
-    top: -50px;
-  }
-
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes top {
-  0% {
-    top: 50px;
-    left: 0;
-  }
-
-  100% {
-    top: 0;
-  }
 }
